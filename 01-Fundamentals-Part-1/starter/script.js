@@ -39,3 +39,10 @@ console.log(markBmi, johnBmi)
 let markHigherBMI = markBmi > johnBmi
 
 console.log(markHigherBMI)
+
+// coding challenge 2
+if(markHigherBMI)
+
+console.log(`Mark's (${markBmi}) is higher than John's!`)
+else
+console.log(`John's (${johnBmi}) is higher than Mark's!`)
