@@ -11,7 +11,7 @@ let population = 3282000000
 // console.log(typeof country,typeof population,typeof isIsland,typeof language)
 
 // let,const, and var assignment
-language = "English"
+// language = "English"
 
 
 // basic operations assignment 
@@ -63,17 +63,17 @@ console.log(dolphinsScore, koalasScore)
 if(dolphinsScore > koalasScore){
     console.log(dolphinsScore)
 }
-if(koalasScore > dolphinsScore){
+else if(koalasScore > dolphinsScore){
     console.log(koalasScore)
 }
-if(koalasScore === dolphinsScore){
+else if(koalasScore === dolphinsScore){
     console.log(`it's a draw`)
 }
 
 dolphinsScore = (97 + 112 + 101)/ 3 
  koalasScore = (109 + 95 + 123)/ 3
 
- if(dolphinsScore > koalasScore && dolphinsScore > 100){
+ if(dolphinsScore > koalasScore && dolphinsScore >   100){
     console.log(`Dolphins win with a score of: ${dolphinsScore}`)
  }else if(koalasScore > dolphinsScore && koalasScore > 100){
     console.log(`Koalas win with a score of: ${koalasScore}`)
@@ -84,10 +84,40 @@ dolphinsScore = (97 + 112 + 101)/ 3
     dolphinsScore = (97 + 112 + 101)/ 3 
     koalasScore = (109 + 95 + 106)/ 3
 
-    if(dolphinsScore > koalasScore && dolphinsScore > 100){
+    if(dolphinsScore > koalasScore && dolphinsScore >= 100){
         console.log(`Dolphins win with a score of: ${dolphinsScore}`)
-     }else if(koalasScore > dolphinsScore && koalasScore > 100){
+     }else if(koalasScore > dolphinsScore && koalasScore >= 100){
         console.log(`Koalas win with a score of: ${koalasScore}`)
-        }else if(dolphinsScore === koalasScore && koalasScore > 100 && dolphinsScore > 100){
+        }else if(dolphinsScore === koalasScore && koalasScore >= 100 && dolphinsScore >= 100){
            console.log(`it's a draw koalas: ${koalasScore}, dolphins: ${dolphinsScore}`) 
         }
+// switch statement challenge
+const language = 'hindi';
+
+switch(language){
+    case 'chinese':
+    case 'mandarin':
+        console.log('MOST number of native speakers!');
+    break;
+    case 'spanish':
+        console.log('2nd place')
+    break;
+    case 'english':
+        console.log('3rd place')
+    break;
+    case 'hindi':
+        console.log('Number 4')
+    break;
+    case 'arabic':
+        console.log('5th most spoken language')
+    break;
+    default:
+    console.log('Great language too :D')
+}
+
+
+// code challenge 4
+let bill =370
+let tip = bill > 50 && bill < 300 ? bill * (10/100) : bill * (20/100);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value
+${bill + tip}`)
