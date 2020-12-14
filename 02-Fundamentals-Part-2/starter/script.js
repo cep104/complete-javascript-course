@@ -29,4 +29,25 @@ if(avgKoalas >= avgDolphins * 2){
 }
 }
 
-checkWinner(avgKoalas, avgDolphins)
+// checkWinner(avgKoalas, avgDolphins)
+
+//coding challenge 2
+const bills = [125, 555, 44]
+const calcTip = function(bill){
+if(bill > 50 && bill < 300){
+   let tip = bill * (20/100)
+   let billTotal = bill + tip
+   return tip
+}else{
+    let tip = bill * (15/100)
+    let billTotal = bill + tip
+    return tip
+}
+}
+let tips = []
+let total = []
+tips.push(calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]))
+console.log(tips)
+// calcTip(600)
+total = [(tips[0] + bills[0]), (tips[1] + bills[1]), (tips[2] + bills[2]) ]
+console.log(total)
