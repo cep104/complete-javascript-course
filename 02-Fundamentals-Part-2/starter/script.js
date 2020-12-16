@@ -51,3 +51,31 @@ console.log(tips)
 // calcTip(600)
 total = [(tips[0] + bills[0]), (tips[1] + bills[1]), (tips[2] + bills[2]) ]
 console.log(total)
+
+// coding challenge 3
+
+const mark = {
+fullName: "Mark Miller",
+height: 1.69,
+mass: 78,
+calcBMI: function(){
+   this.bmi = this.mass / (this.height ** 2)
+   return this.bmi
+}
+}
+
+const john = {
+    fullName: "John Smith",
+    height: 1.95,
+    mass: 92,
+    calcBMI: function(){
+     this.bmi = this.mass / (this.height ** 2)
+    return this.bmi
+}
+
+}
+
+console.log(mark.calcBMI());
+console.log(john.calcBMI());
+console.log(mark.calcBMI() > john.calcBMI() ? `${mark.fullName} BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`:`${john.fullName}'s BMI (${john.calcBMI()})'s is higher than ${mark.fullName}'s (${mark.calcBMI()})!`)
+
